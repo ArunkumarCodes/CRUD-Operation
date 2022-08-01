@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body style="margin: 30px; padding: 20px;">
+    <div class="container" style="height: 200px; background-color: coral;">
+        Welcome to Timesgroup of Industries 
+    </div> <br>
+    <form action="./views/addEmp.html">
+        <button class="btn btn-primary" type="submit">Add Employee</button>
+    </form> <br>
+    <form action="./views/readEmp.html">
+        <button class="btn btn-primary" type="submit">Read Employees</button>
+    </form> <br>
+    <form action="./views/updateEmp.html">
+        <button class="btn btn-primary" type="submit">Update Employee</button>
+    </form><br>
+    <form action="./views/deleteEmp.html">
+        <button class="btn btn-primary" type="submit">Delete Employee</button>
+    </form>
+    
+</body>
+</html>
+
+<!-- <%
+        if(recordsets.length!=0){
+        var i=1;
+        recordsets.forEach(function(data){
+        %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=data.EmpId %></td>
+            <td><%=data.EmpName %></td>
+            <td><%=data.Designation %></td>
+            <td><%=data.Salary %></td>
+            <td><%=data.DeptId %></td>
+            <td><%=data.ManagerID %></td>
+             <td><a href="/users/delete/<%=data.id%>">Delete</a></td> 
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="6">No Data Found</td>
+            </tr>
+        <% } %> -->

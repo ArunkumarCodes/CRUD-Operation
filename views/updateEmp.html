@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Update Employee</h1>
+    <form action="/views/updateEmp.html" method="post">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Emp Id</label>
+        <input type="number" class="form-control" id="empid" name="empid" placeholder="Enter Id Number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Emp Name</label>
+        <input type="name" class="form-control" id="empName" name="empName" placeholder="Enter Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Emp Designation</label>
+        <input type="text" class="form-control" id="designation" name="designation" placeholder="Ex.Your Designation">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Emp Salary</label>
+        <input type="number" class="form-control" id="salary" name="salary" placeholder="Enter Salary">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Emp DeptID</label>
+        <input type="number" class="form-control" id="deptId" name="deptId" placeholder="Enter Department Id">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Emp ManagerID</label>
+        <input type="number" class="form-control" id="mgrID" name="mgrID" placeholder="Enter Manager Id">
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary" id="add" type="submit">Update Employee</button>
+      </div>
+    </form>
+
+</body>
+</html>

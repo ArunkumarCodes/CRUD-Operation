@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    CRUD Operation
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <br><br><h2 class="mx-auto text-center">
+      CRUD Operation Node.js
+    </h2><br><br>
+    <div class="container-fluid d-flex justify-content-center">
+      <form action="./views/addEmp.html">
+        <button class="btn btn-primary me-5" style="margin-left: 5px;" type="submit">Add Employee</button>
+      </form> <br>
+      <!-- <form action="./views/readEmp.html">
+    <button class="btn btn-primary" type="submit">Read Employees</button>
+</form> <br> -->
+      <form action="./views/updateEmp.html">
+        <button class="btn btn-primary me-5" style="margin-left: 10px;" type="submit">Update Employee</button>
+      </form><br>
+      <form action="./views/deleteEmp.html">
+        <button class="btn btn-primary me-5" style="margin-left: 10px;" type="submit">Delete Employee</button>
+      </form> <br><br><br>
+    </div>
+    <!-- <a href="/add" class="btn btn-sm btn-primary">Add User</a> -->
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Emp ID</th>
+          <th>Emp Name</th>
+          <th>Emp JOB</th>
+          <th>Salary</th>
+          <th>Dept ID</th>
+          <th>Manager ID</th>
+        </tr>
+      </thead>
+      <tbody id="place-here">  
+        
+      </tbody>
+     
+    </table>
+  </div>
+  <script>
+    document.getElementById('place-here').data;
+   {data.map((item)=>(
+    <tr><td>${item.empid}</td>
+          <td>${item.empname}</td>
+          <td>${item.designation}</td>
+          <td>${item.salary}</td>
+          <td>${item.deptid}</td>
+          <td>${item.managerid}</td></tr>
+
+   ))}
+  
+  </script>
+  <script src="./server.js"></script>
+
+</body>
+
+</html>
