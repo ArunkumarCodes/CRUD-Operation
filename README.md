@@ -10,3 +10,5 @@ A simple records system using
 5. Bootstrap<br>
 with real-time Create, Read, Update, and Delete operation using REST
 API was implemented on the back-end.<br>
+![crud app 1](https://user-images.githubusercontent.com/98338459/188871542-a63f7b55-28fc-4adf-8244-6a9f9b4e4e30.jpg)
+![crud app 2](https://user-images.githubusercontent.com/98338459/188871556-18f5a942-9d32-457a-9087-33208fe76628.jpg)
